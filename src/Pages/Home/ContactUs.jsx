@@ -1,4 +1,4 @@
-import './ContactUs.css'
+import '../../Styles/ContactUs.css'
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
 function ContactUs(){

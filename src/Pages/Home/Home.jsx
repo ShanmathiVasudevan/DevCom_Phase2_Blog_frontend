@@ -1,4 +1,4 @@
-import './Home.css'
+import '../../Styles/Home.css'
 import Header from './Header.jsx'
 import MainBlog from './MainBlog'
 import PrefRow from './PrefRow.jsx'
