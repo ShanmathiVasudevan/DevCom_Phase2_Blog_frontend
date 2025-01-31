@@ -1,0 +1,78 @@
+body {
+  background-color: #c2e2dd;
+}
+.welcome {
+  font-family: Arial;
+  text-align: center;
+  margin-left: 17rem;
+  margin-top: 2rem;
+}
+h3 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+a.login {
+  text-decoration: none;
+  color: blue;
+}
+
+label.input-label {
+  margin-left: 10px;
+}
+.input-container {
+  margin-left: 15rem;
+}
+
+.input-label {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.input-field {
+  color: black;
+  font-size: 10px;
+  border: none;
+  margin-bottom: 2rem;
+}
+.input-field:focus {
+  border-bottom: 1px solid #007bff;
+  outline: none;
+}
+
+p.or {
+  margin-left: 46rem;
+  margin-top: -15rem;
+}
+.google-button {
+  margin-left: 53rem;
+  margin-top: -6rem;
+}
+img.google-logo {
+  margin-left: 47.8rem;
+  margin-bottom: 6.15rem;
+}
+
+button.submitbutton {
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #b37256;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 6.5rem;
+}
+
+button.submitbutton:hover {
+  background-color: black;
+  color: white;
+}
