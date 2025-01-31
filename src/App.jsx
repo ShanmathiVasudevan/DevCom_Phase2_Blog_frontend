@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import "react-quill/dist/quill.snow.css";
-import EditBlog from './Pages/EditBlog/EditBlog';
+import EditBlog from "./Pages/EditBlog/EditBlog";
 import Login from "./login";
 import Signup from "./signup";
 
@@ -19,7 +19,7 @@ function App() {
             <Signup />
           </Route>
           <Route exact path="/editblog">
-          <EditBlog/>
+            <EditBlog />
           </Route>
         </Switch>
       </div>
