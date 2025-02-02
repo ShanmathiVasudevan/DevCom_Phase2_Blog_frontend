@@ -46,7 +46,6 @@ function App() {
   return (
     <>
     <div className="create-post">
-
         <form onSubmit={handleSubmit}>
           <div className="text-editor">
                 <EditorToolbar />
