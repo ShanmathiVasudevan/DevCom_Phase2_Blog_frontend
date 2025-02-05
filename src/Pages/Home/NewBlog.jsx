@@ -5,7 +5,7 @@ function NewBlog(){
         <span class="material-symbols-outlined">
             add_box
         </span>
-            <p>New Blog</p>
+            <p className="newblog-button">New Blog</p>
         </div>
         </>
     );

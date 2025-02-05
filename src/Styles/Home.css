@@ -80,7 +80,7 @@ body {
     width: 100%;
     background-color: white;
     height: 554px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/e87f/d29d/5a0873ae07f974e7aab03bf02a037e6d?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oa6ShkiK667jMa02ENR~ktTU9xxmZtyxHafuZWawfh0XkOIkMlVdEEiNZKz8vCLEpd43tbsDLL6BFhQaSn9fjfy6Djm4xU25Shr1Rytce-wPNerJ3QFw6HEf7woayQ7fx73gv-eNgCG24pPCvHkj0UlVDMKg0XrqWpNxvI8lUdK3aOP~GbJ8p6n85cnB6xdzTl7SsBberZrF7krfTlMG0dxLdfrEbtImvGlnWIbQc3fxeENH5iQNeXi~wJkfFdhxsIN~UXdD6og6YDU9Kz7ufxLTYP9mS08ir1uqIfTv8EBH~phW9xyT-MVj9d19X0VW4yGNpbfbnM6oHhT6sVY-eQ__);
+    background-image: url(scenary.jpeg);
     background-size: cover;
     background-position: center;
     align-self: center; 
@@ -89,7 +89,7 @@ body {
     
   }
   .middle{
-    width: 90%;
+    width: 85%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -164,7 +164,8 @@ body {
   .preview-container{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: calc(33.33%-50px);
+    max-width: 300px;
     flex:1;
   }
   .preview-pic{
@@ -177,6 +178,14 @@ body {
   }
   .pr-empty{
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+  }
+  .write-icon{
+    background-color: white;
+    border-radius: 5px;
   }
   .pr-info{
     flex: 1;
@@ -185,7 +194,10 @@ body {
   .preview-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 50px;
+    row-gap: 20px;
   }
   .sidebar-toggle{
     background: transparent;
@@ -214,8 +226,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 120px;
-    justify-content: space-between;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
     border-radius: 10px;
     padding-left: 12px;
     padding-right: 12px;
@@ -225,6 +238,10 @@ body {
   .newblog-container{
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
   }
   .user-details{
     display: flex;
@@ -255,6 +272,7 @@ body {
     flex-direction: row;
     align-items: center;
     width: 250px;
+    height: 50px;
     justify-content: center;
   }
   .option-button{
@@ -279,6 +297,7 @@ body {
     background-color: white;
     width: 285px;
   }
+
   .pr-info{
     display: flex;
     flex-direction: row;
@@ -330,4 +349,9 @@ body {
   }
   .pr-favourites.liked{
     color:rgb(231, 44, 75);
+  }
+  .newblog-button{
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
   }

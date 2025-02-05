@@ -1,10 +1,11 @@
 import logo from "./assets/logo.jpg";
 import photo from "./assets/photo.png";
 import InputField from "./components/InputField";
+import "./Styles/Login.css"
 
 function login() {
   return (
-    <>
+    <div className="login-page">
       <div className="inner">
         <img src={photo} alt="blog photo" className="image" />
         <h1 className="login">LOG IN</h1>
@@ -37,7 +38,7 @@ function login() {
           </a>
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

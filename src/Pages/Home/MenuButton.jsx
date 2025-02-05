@@ -6,8 +6,7 @@ function MenuButton(){
     const dropdownItems=[
       {label: "Home", symbol: "home", key:""},
       {label:"My Blogs", symbol: "collections_bookmark",key: "MyBlogs"},
-      {label:"Contact Us", symbol: "call", key:"ContactUs"},
-      {label:"Logout", symbol: "logout",key: "SignIn"},
+      {label:"Logout", symbol: "logout",key: "Login"},
     ]
     return(
         <div className="nav-block">
