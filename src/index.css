@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -78,3 +79,143 @@ button:focus-visible {
   width:90vw;
 }
 
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 2.5rem;
+  height: max-content;
+
+  background-color: #8ea29b;
+}
+.inner {
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-left: 5rem;
+  background-color: #c2e2dd;
+  min-height: 40.5rem;
+  min-width: 86rem;
+}
+
+h1.login {
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+img.image {
+  position: absolute;
+  right: 15rem;
+  top: 0;
+  height: 50rem;
+  width: auto;
+}
+
+.login-wrapper {
+  margin-top: 1.8rem;
+}
+
+p.email {
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 10px;
+}
+input.input-field {
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  padding: 10px;
+  padding-right: 7rem;
+  background-color: #f9f0f0;
+}
+
+.password-wrapper {
+  margin-top: 1.5rem;
+}
+
+p.Password {
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+a.forgot-pass-link {
+  font-size: 15px;
+  margin-left: 14.7rem;
+  color: #635c5c;
+  text-decoration: none;
+  cursor: pointer;
+}
+a.forgot-pass-link:hover {
+  color: black;
+  font-weight: 450;
+}
+
+button.login-button {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #b37256;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+button.login-button:hover {
+  background-color: black;
+  color: white;
+}
+button.google-button {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 2.4rem;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+img.google-logo {
+  height: 25px;
+  position: absolute;
+  left: 13.3rem;
+  bottom: 16.2rem;
+}
+
+p.signup-text {
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+
+a.signup-link {
+  text-decoration: none;
+  color: #b37256;
+}
+
+a.signup-link:hover {
+  text-decoration: underline;
+}
+>>>>>>> origin/main
