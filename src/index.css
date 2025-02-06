@@ -28,8 +28,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-input #title{
-  
+input[type="text"] #title{
   padding-top: 5px;
   width:89.5vw;
   font-size: 1.5rem;
