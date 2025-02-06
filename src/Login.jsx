@@ -1,8 +1,14 @@
 import logo from "./assets/logo.jpg";
 import photo from "./assets/photo.png";
 import InputField from "./components/InputField";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { useState } from "react";
 
 function login() {
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(!show);
+  };
   return (
     <>
       <div className="inner">
@@ -10,10 +16,22 @@ function login() {
         <h1 className="login">LOG IN</h1>
         <form action="#" className="login-form">
           <InputField type="email" placeholder="Enter your email address" />
-          <InputField type="password" placeholder="Enter your password" />
+          <div className="inputbox">
+            <InputField
+              type={show ? "text" : "password"}
+              placeholder="Enter your password"
+            />
+            <p onClick={handleClick} className="eye">
+              {show ? (
+                <AiOutlineEyeInvisible></AiOutlineEyeInvisible>
+              ) : (
+                <AiOutlineEye></AiOutlineEye>
+              )}
+            </p>
+          </div>
 
           <div className="forgot-password">
-            <a href="https://www.google.co.in/" className="forgot-pass-link">
+            <a href="/forgot" className="forgot-pass-link">
               {" "}
               Forgot password?
             </a>
@@ -22,11 +40,10 @@ function login() {
           <div className="login-button">
             <button className="login-button"> LOG IN</button>
           </div>
-
           <div className="google-button">
             <button className="google-button">
               <img src={logo} alt="logo" className="google-logo" />
-              Sign in with Google
+              Continue with Google
             </button>
           </div>
         </form>

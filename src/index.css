@@ -105,8 +105,8 @@ button.google-button {
   padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 20px;
-  margin-left: 2.4rem;
+  margin-top: 8rem;
+  margin-left: -50.8rem;
   font-size: 15px;
   font-weight: 400;
   background-color: white;
@@ -119,8 +119,8 @@ button.google-button {
 img.google-logo {
   height: 25px;
   position: absolute;
-  left: 13.3rem;
-  bottom: 16.2rem;
+  left: -34.5rem;
+  bottom: 5.3rem;
 }
 
 p.signup-text {
@@ -135,4 +135,12 @@ a.signup-link {
 
 a.signup-link:hover {
   text-decoration: underline;
+}
+
+.inputbox {
+  display: flex;
+}
+p.eye {
+  margin-left: -2rem;
+  transform: translateY(2.8rem);
 }
