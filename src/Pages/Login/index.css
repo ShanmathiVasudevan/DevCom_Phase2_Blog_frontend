@@ -57,7 +57,7 @@ button:hover {
   border-color: rgb(0, 0, 0);
 }
 button:focus,
-button:focus-visible {
+button:focus-visible #addPost {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
