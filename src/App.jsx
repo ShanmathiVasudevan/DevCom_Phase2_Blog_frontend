@@ -1,6 +1,10 @@
 import Login from "./Login.jsx";
+import React, {useState, useEffect} from 'react';
+//import "react-quill/dist/quill.snow.css";
+import EditBlog from './Pages/EditBlog/EditBlog.jsx';
 import Signup from "./signup";
 import Home from './Pages//Home/Home.jsx'
+
 
 import MyBlogs from './Pages/Home/MyBlogs.jsx'
 import SignIn from './Pages/Home/SignIn.jsx'
@@ -12,7 +16,6 @@ import {
 function App() {
   return (
     <Router>
-      {/* <Signup /> */}
       <div className="content">
         <Routes>
           <Route  path="/signup" element={<Signup/>}/>
@@ -20,6 +23,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/MyBlogs" element={<MyBlogs/>}/>
           <Route path="/SignIn" element={<SignIn/>}/>
+          <Route path="/EditBlog" element={<EditBlog/>}/>
         </Routes>
       </div>
     </Router>
