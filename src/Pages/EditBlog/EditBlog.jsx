@@ -60,7 +60,7 @@ function EditBlog() {
                   formats={formats}
                 />
               </div>
-          <button type="submit">Add Post</button>
+          <button  id="addPost" type="submit">Add Post</button>
           
         </form>
       </div>

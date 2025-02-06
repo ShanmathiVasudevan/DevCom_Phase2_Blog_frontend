@@ -24,25 +24,15 @@ body {
   margin-left:5vw;
   margin-right:5vw;
 }
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 input[type="text"] #title{
   padding-top: 5px;
   width:89.5vw;
   font-size: 1.5rem;
   font-family: 'Arial', Times, serif;
 }
-textarea{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
-  margin-top:0px;
-  margin-bottom:10px;
-  width: 90vw;
-  height: 80vh;
-}
-button {
+
+button #addPost{
   border-radius: 8px;
   border: 1px solid rgb(0,0,0,0.3);
   padding: 0.6em 1.2em;
@@ -53,12 +43,12 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+button:hover #addPost{
   background-color: rgb(150,150,150);
   border-color: rgb(0,0,0);
 }
 button:focus,
-button:focus-visible {
+button:focus-visible #addPost{
   outline: 4px auto -webkit-focus-ring-color;
 }
 
