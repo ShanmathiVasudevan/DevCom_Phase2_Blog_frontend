@@ -50,7 +50,7 @@ function EditBlog() {
         <form onSubmit={handleSubmit}>
           <div className="text-editor">
                 <EditorToolbar />
-                <input type='text' placeholder="Enter title" value={title} onChange={(e) => setTitle(e.target.value)}></input>
+                <input id="title" type='text' placeholder="Enter title" value={title} onChange={(e) => setTitle(e.target.value)}></input>
                 <ReactQuill
                   theme="snow"
                   value={body.value}
