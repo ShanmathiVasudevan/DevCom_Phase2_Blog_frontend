@@ -23,6 +23,16 @@ function App() {
       element: <Signup />,
     },
   ]);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login />,
+    },
+    {
+      path: "/signup",
+      element: <Signup />,
+    },
+  ]);
   return (
     <>
       <Router>
