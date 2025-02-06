@@ -1,5 +1,5 @@
 import "./signupstyle.css";
-import logo from "./assets/logo.jpg";
+import logo from "../assets/logo.jpg";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
 
