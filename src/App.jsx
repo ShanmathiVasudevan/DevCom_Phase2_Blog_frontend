@@ -5,25 +5,39 @@ import Login from "./login";
 import Signup from "./signup";
 
 import {
-  BrowserRouter as Router,
-  Route,
+  createBrowserRouter,
+  RouterProvider,
+  Router,
   Switch,
-} from "react-router-dom/cjs/react-router-dom.min";
+  Route,
+} from "react-router-dom";
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login />,
+    },
+    {
+      path: "/signup",
+      element: <Signup />,
+    },
+  ]);
   return (
-    <Router>
-      <Signup />
-      <div className="content">
-        <Switch>
-          <Route exact path="/signup">
-            <Signup />
-          </Route>
-          <Route exact path="/editblog">
-            <EditBlog />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <>
+      <Router>
+        <div className="content">
+          <Switch>
+            <Route exact path="/signup">
+              <Signup />
+            </Route>
+            <Route exact path="/editblog">
+              <EditBlog />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </>
   );
 }
 

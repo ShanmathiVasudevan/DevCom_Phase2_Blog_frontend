@@ -1,10 +1,13 @@
 body {
   background-color: #c2e2dd;
 }
+.signup {
+  margin-left: 15rem;
+}
 .welcome {
   font-family: Arial;
   text-align: center;
-  margin-left: 17rem;
+  margin-left: 16rem;
   margin-top: 2rem;
 }
 h3 {
@@ -69,10 +72,27 @@ button.submitbutton {
   color: white;
   cursor: pointer;
   margin-top: 2rem;
-  margin-left: 6.5rem;
+  margin-left: 7.2rem;
 }
 
 button.submitbutton:hover {
   background-color: black;
   color: white;
+}
+
+.inputbox1 {
+  display: flex;
+}
+.inputbox2 {
+  display: flex;
+}
+p.eye1 {
+  cursor: pointer;
+  margin-left: -2rem;
+  transform: translateY(1rem);
+}
+p.eye2 {
+  cursor: pointer;
+  margin-left: -2rem;
+  transform: translateY(1rem);
 }
