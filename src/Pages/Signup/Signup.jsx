@@ -2,7 +2,7 @@ import "./signupstyle.css";
 //import logo from "./assets/logo.jpg";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 function Signup() {
   const [show, setShow] = useState(false);
   const handleClick = () => {
@@ -14,10 +14,10 @@ function Signup() {
         <h3>Sign Up</h3>
         <p>
           Already have an account?{" "}
-          <a href="/" className="login">
+          <Link to="/" className="login">
             {" "}
             Log in.
-          </a>{" "}
+          </Link>{" "}
         </p>
       </div>
       <form action="#" className="fields">

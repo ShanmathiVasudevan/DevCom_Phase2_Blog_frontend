@@ -13,8 +13,6 @@ body {
   margin-top: 2.5rem;
   height: max-content;
   box-sizing: border-box;
-
-  background-color: #8ea29b;
 }
 .inner {
   justify-content: center;
