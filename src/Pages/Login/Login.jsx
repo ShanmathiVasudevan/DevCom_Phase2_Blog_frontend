@@ -13,8 +13,10 @@ function login() {
   return (
     <>
       <div className="inner">
-        <img src={photo} alt="blog photo" className="image" />
-        <h1 className="login">LOG IN</h1>
+        <div className="heading">
+          <h1 className="login">LOG IN </h1>
+          <img src={photo} alt="blog photo" className="image" />
+        </div>
         <form action="#" className="login-form">
           <InputField type="email" placeholder="Enter your email address" />
           <div className="inputbox">
