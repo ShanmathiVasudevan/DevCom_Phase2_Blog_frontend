@@ -1,5 +1,5 @@
-import logo from "./assets/logo.jpg";
-import photo from "./assets/photo.png";
+import logo from "../assets/logo.jpg";
+import photo from "../assets/photo.png";
 import InputField from "../../components/InputField";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";

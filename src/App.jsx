@@ -1,52 +1,38 @@
 import React, { useState, useEffect } from "react";
 import "react-quill/dist/quill.snow.css";
 import EditBlog from "./Pages/EditBlog/EditBlog";
-import Login from "./login";
-import Signup from "./signup";
+import Login from "./Pages/Login/Login";
+import Signup from "./Pages/Signup/Signup";
+import Home from "./Pages/Home/Home";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Header from "./Pages/Home/Header";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Login />,
+      default: true,
     },
     {
       path: "/signup",
       element: <Signup />,
     },
-  ]);
-  const router = createBrowserRouter([
     {
-      path: "/",
-      element: <Login />,
+      path: "/editblog",
+      element: <EditBlog />,
     },
     {
-      path: "/signup",
-      element: <Signup />,
+      path: "/home",
+      element: <Home />,
     },
   ]);
   return (
+    // (<Login />),
     <>
-      <Router>
-        <div className="content">
-          <Switch>
-            <Route exact path="/signup">
-              <Signup />
-            </Route>
-            <Route exact path="/editblog">
-              <EditBlog />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      {/* <Header /> */}
+      <RouterProvider router={router} />
     </>
   );
 }

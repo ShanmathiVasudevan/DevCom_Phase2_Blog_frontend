@@ -8,7 +8,7 @@ body {
   font-family: Arial;
   text-align: center;
   margin-left: 16rem;
-  margin-top: 2rem;
+  margin-top: -3rem;
 }
 h3 {
   font-size: 40px;
@@ -71,7 +71,7 @@ button.submitbutton {
   background-color: #b37256;
   color: white;
   cursor: pointer;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-left: 7.2rem;
 }
 
