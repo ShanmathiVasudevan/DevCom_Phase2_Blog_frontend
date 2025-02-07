@@ -1,8 +1,8 @@
-import MenuButton from './MenuButton';
-function Header(){
-    return(
+import MenuButton from "./MenuButton";
+ import "../../Styles/Home.css";
+function Header() {
+  return (
     <div className="header">
-      
       <div className="middle-section">
         <input
           type="text"
@@ -12,22 +12,19 @@ function Header(){
       </div>
       <div className="right-section">
         <div>
-          <button className='favourites'>
-          <span class="material-symbols-outlined">
-            favorite
-          </span>
+          <button className="favourites">
+            <span class="material-symbols-outlined">favorite</span>
           </button>
         </div>
         <div className="daily-blog">The Daily Blog</div>
         <div className="profile-pic">
-          <button className='pic-button'>
-          <span class="material-symbols-outlined">
-            account_circle
-          </span>
+          <button className="pic-button">
+            <span class="material-symbols-outlined">account_circle</span>
           </button>
         </div>
-        <MenuButton/>
+        <MenuButton />
       </div>
-    </div>);
+    </div>
+  );
 }
-export default Header 
+export default Header;

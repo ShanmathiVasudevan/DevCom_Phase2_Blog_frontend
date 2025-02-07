@@ -8,16 +8,16 @@ body {
   font-family: Arial;
   text-align: center;
   margin-left: 16rem;
-  margin-top: 2rem;
+  margin-top: -3rem;
 }
 h3 {
   font-size: 40px;
   margin-bottom: 1rem;
 }
-p {
+/*p {
   font-size: 18px;
   margin-bottom: 3rem;
-}
+}*/
 a.login {
   text-decoration: none;
   color: blue;
@@ -71,7 +71,7 @@ button.submitbutton {
   background-color: #b37256;
   color: white;
   cursor: pointer;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-left: 7.2rem;
 }
 

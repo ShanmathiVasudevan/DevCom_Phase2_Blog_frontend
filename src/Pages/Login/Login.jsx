@@ -3,7 +3,8 @@ import photo from "../assets/photo.png";
 import InputField from "../../components/InputField";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
-import './index.css'
+//import './index.css'
+import { Link } from "react-router-dom";
 
 function login() {
   const [show, setShow] = useState(false);
@@ -11,7 +12,7 @@ function login() {
     setShow(!show);
   };
   return (
-    <>
+    <div className="login-page">
       <div className="inner">
         <img src={photo} alt="blog photo" className="image" />
         <h1 className="login">LOG IN</h1>
@@ -32,10 +33,10 @@ function login() {
           </div>
 
           <div className="forgot-password">
-            <a href="/forgot" className="forgot-pass-link">
+            <Link to="/forgot" className="forgot-pass-link">
               {" "}
               Forgot password?
-            </a>
+            </Link>
           </div>
 
           <div className="login-button">
@@ -50,12 +51,12 @@ function login() {
         </form>
         <p className="signup-text">
           Don&apos;t have an account?{" "}
-          <a href="/signup" className="signup-link">
+          <Link to="/signup" className="signup-link">
             Signup now
-          </a>
+          </Link>
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
