@@ -1,0 +1,49 @@
+.drafts{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.drafts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.drafts-info{
+    flex: 9;
+}
+.profile-pic{
+    flex: 1;
+}
+.pic{
+    justify-content: center;
+}
+.drafts-header{
+    font-family: "Joan", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+.draft-buttons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.button1, .button2{
+    background-color: #689B95;
+    border-color: transparent;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-family: "Joan", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+.draft-des{
+    font-family: "Joan", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}

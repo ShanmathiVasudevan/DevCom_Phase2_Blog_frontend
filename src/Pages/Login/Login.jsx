@@ -1,30 +1,56 @@
 import logo from "../assets/logo.jpg";
+import React from "react";
 import photo from "../assets/photo.png";
 import InputField from "../../components/InputField";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
+//import './index.css'
 import { Link } from "react-router-dom";
 
-function login() {
+const LoginForm = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("User Email:", email);
+    console.log("Password: ", password);
+  };
+
   const [show, setShow] = useState(false);
-  const handleClick = () => {
+  const handleClickA = () => {
     setShow(!show);
   };
   return (
-    <>
+    <div className="login-page">
       <div className="inner">
         <div className="heading">
           <h1 className="login">LOG IN </h1>
           <img src={photo} alt="blog photo" className="image" />
         </div>
-        <form action="#" className="login-form">
-          <InputField type="email" placeholder="Enter your email address" />
+        <form onSubmit={handleSubmit} className="login-form">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => {
+              console.log("Updated email: ", e.target.value);
+              setEmail(e.target.value);
+            }}
+            placeholder="Enter your email address"
+            className="loginfields"
+          />
           <div className="inputbox">
-            <InputField
+            <input
               type={show ? "text" : "password"}
+              value={password}
+              onChange={(e) => {
+                console.log("Updated password: ", e.target.value);
+                setPassword(e.target.value);
+              }}
               placeholder="Enter your password"
+              className="loginfields"
             />
-            <p onClick={handleClick} className="eye">
+            <p onClick={handleClickA} className="eye">
               {show ? (
                 <AiOutlineEyeInvisible></AiOutlineEyeInvisible>
               ) : (
@@ -41,13 +67,13 @@ function login() {
           </div>
 
           <div className="login-button">
-            <button className="login-button"> LOG IN</button>
+            <button onClick={handleSubmit} className="login-button">
+              {" "}
+              LOG IN
+            </button>
           </div>
           <div className="google-button">
-            <button className="google-button">
-              <img src={logo} alt="logo" className="google-logo" />
-              Continue with Google
-            </button>
+            <button className="google-button">Continue with Google</button>
           </div>
         </form>
         <p className="signup-text">
@@ -57,8 +83,8 @@ function login() {
           </Link>
         </p>
       </div>
-    </>
+    </div>
   );
-}
-
-export default login;
+};
+//};
+export default LoginForm;

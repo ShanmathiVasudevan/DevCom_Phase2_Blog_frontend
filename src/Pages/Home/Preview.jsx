@@ -1,29 +1,69 @@
 import React,{useState} from 'react'
+const username="Aakash"
+const blogs=[
+    {
+        name: "Finding Serenity",
+        description: "Embracing peace through nature's embrace",
+        image: "./pic1.jpeg",
+        publisher: "Aakash",
+        date: "24 Jan 2024",
+        read: "10 min read"
+    },
+    {
+        name: "Chasing Horizons",
+        description: "The magic and meaning of sunsets",
+        image: "./pic2.jpeg",
+        publisher: "Rohit",
+        date: "28 Feb 2024",
+        read: "10 min read"
+    },
+    {
+        name: "Stillness Within",
+        description: "Unlocking the poer of meditation",
+        image: "./pic3.jpeg",
+        publisher: "Selena",
+        date: "3 June 2024",
+        read: "10 min read"
+    },
+    {
+        name: "Stillness Within",
+        description: "Unlocking the poer of meditation",
+        image: "./pic3.jpeg",
+        publisher: "Aakash",
+        date: "18 Oct 2024",
+        read: "10 min read"
+    },
+    {
+        name: "Stillness Within",
+        description: "Unlocking the poer of meditation",
+        image: "./pic3.jpeg",
+        publisher: "Selena",
+        date: "31 Dec 2024",
+        read: "10 min read"
+    },
+    {
+        name: "Stillness Within",
+        description: "Unlocking the poer of meditation",
+        image: "./pic3.jpeg",
+        publisher: "Selena",
+        date: "25 Dec 2024",
+        read: "10 min read"
+    },
+    {
+        name: "Stillness Within",
+        description: "Unlocking the poer of meditation",
+        image: "./pic3.jpeg",
+        publisher: "Aakash",
+        date: "3 Jan 2024",
+        read: "10 min read"
+    }
+
+]
+export const myblogs=blogs.filter(blog=>blog.publisher===username)
 function Preview(){
-    const blogs=[
-        {
-            name: "Finding Serenity",
-            description: "Embracing peace through nature's embrace",
-            image: "./pic1.jpeg",
-            publisher: "Aakash"
-        },
-        {
-            name: "Chasing Horizons",
-            description: "The magic and meaning of sunsets",
-            image: "./pic2.jpeg",
-            publisher: "Rohit"
-        },
-        {
-            name: "Stillness Within",
-            description: "Unlocking the poer of meditation",
-            image: "./pic3.jpeg",
-            publisher: "Selena"
-        }
-    ]
     const [isPrLiked,setIsPrLiked]=useState(false)
     return(
         <>
-        
         {blogs.map((blog, index) => (
             <div className="preview-container">
                 <div key={index} className="preview-item">

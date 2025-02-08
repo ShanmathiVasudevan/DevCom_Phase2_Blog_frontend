@@ -3,11 +3,12 @@
 
 body {
   /* background-image: linear-gradient(#8fa49d, #363e3b); */
-  height: 100vh; /* Ensure it covers the full screen */
+  height: 100vh; 
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: auto;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -79,7 +80,7 @@ body {
   width: 100%;
   background-color: white;
   height: 554px;
-  background-image: url(https://s3-alpha-sig.figma.com/img/e87f/d29d/5a0873ae07f974e7aab03bf02a037e6d?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oa6ShkiK667jMa02ENR~ktTU9xxmZtyxHafuZWawfh0XkOIkMlVdEEiNZKz8vCLEpd43tbsDLL6BFhQaSn9fjfy6Djm4xU25Shr1Rytce-wPNerJ3QFw6HEf7woayQ7fx73gv-eNgCG24pPCvHkj0UlVDMKg0XrqWpNxvI8lUdK3aOP~GbJ8p6n85cnB6xdzTl7SsBberZrF7krfTlMG0dxLdfrEbtImvGlnWIbQc3fxeENH5iQNeXi~wJkfFdhxsIN~UXdD6og6YDU9Kz7ufxLTYP9mS08ir1uqIfTv8EBH~phW9xyT-MVj9d19X0VW4yGNpbfbnM6oHhT6sVY-eQ__);
+  background-image: url(scenary.jpeg);
   background-size: cover;
   background-position: center;
   align-self: center;
@@ -87,7 +88,7 @@ body {
   flex-direction: column;
 }
 .middle {
-  width: 90%;
+  width: 85%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -161,8 +162,9 @@ body {
 .preview-container {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: calc(33.33%-50px);
   flex: 1;
+  max-width: 300px;
 }
 .preview-pic {
   height: 350px;
@@ -174,6 +176,14 @@ body {
 }
 .pr-empty {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 10px;
+}
+.write-icon{
+  background-color: white;
+  border-radius: 5px;
 }
 .pr-info {
   flex: 1;
@@ -182,6 +192,9 @@ body {
   display: flex;
   flex-direction: row;
   column-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
 }
 .sidebar-toggle {
   background: transparent;
@@ -217,6 +230,7 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   box-sizing: border-box;
+  border-color: transparent;
 }
 .newblog-container {
   display: flex;
@@ -255,6 +269,7 @@ body {
   flex-direction: row;
   align-items: center;
   width: 250px;
+  height: 45px;
   justify-content: center;
 }
 .option-button {
@@ -328,4 +343,10 @@ body {
 }
 .pr-favourites.liked {
   color: rgb(231, 44, 75);
+}
+.newblog-button{
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  
 }

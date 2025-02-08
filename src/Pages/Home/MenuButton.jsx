@@ -4,10 +4,9 @@ import {Link} from 'react-router-dom'
 function MenuButton(){
     const [isNavOpen,setIsNavOpen]=useState(false);
     const dropdownItems=[
-      {label: "Home", symbol: "home", key:""},
+      {label: "Home", symbol: "home", key:"home"},
       {label:"My Blogs", symbol: "collections_bookmark",key: "MyBlogs"},
-      {label:"Contact Us", symbol: "call", key:"ContactUs"},
-      {label:"Logout", symbol: "logout",key: "SignIn"},
+      {label:"Logout", symbol: "logout",key: ""},
     ]
     return(
         <div className="nav-block">
@@ -21,7 +20,7 @@ function MenuButton(){
           {isNavOpen&&(
             <div className='dropdown-menu'>
               
-                {dropdownItems.map((item,index)=>(
+                {dropdownItems.map((item)=>(
                   <Link to={`/${item.key}`}>
                   <button className="option-button">
                   <div className="option">

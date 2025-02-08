@@ -1,5 +1,5 @@
 import MenuButton from "./MenuButton";
-// import "../../Styles/Home.css";
+ import "../../Styles/Home.css";
 function Header() {
   return (
     <div className="header">

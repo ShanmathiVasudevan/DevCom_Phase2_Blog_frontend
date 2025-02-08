@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +12,12 @@ body {
   margin-top: 2.5rem;
   height: max-content;
   box-sizing: border-box;
+}
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 .inner {
   justify-content: center;
@@ -49,11 +54,11 @@ p.email {
   font-size: 24px;
   margin-left: 10px;
 }
-input.input-field {
+input.loginfields {
   font-size: 18px;
   border-radius: 8px;
   border: none;
-  margin-top: 5px;
+  margin-top: 2rem;
   padding: 10px;
   padding-right: 7rem;
   background-color: #f9f0f0;

@@ -7,17 +7,18 @@ body {
 .welcome {
   font-family: Arial;
   text-align: center;
-  margin-left: 16rem;
+  margin-left: 20rem;
   margin-top: -3rem;
+  margin-bottom: 5%;
 }
 h3 {
   font-size: 40px;
   margin-bottom: 1rem;
 }
-p {
+/*p {
   font-size: 18px;
   margin-bottom: 3rem;
-}
+}*/
 a.login {
   text-decoration: none;
   color: blue;
@@ -27,7 +28,7 @@ label.input-label {
   margin-left: 10px;
 }
 .input-container {
-  margin-left: 15rem;
+  margin-left: 20rem;
 }
 
 .input-label {
@@ -37,11 +38,14 @@ label.input-label {
   display: block;
 }
 
-.input-field {
-  color: black;
-  font-size: 10px;
+input.input-field {
+  font-size: 18px;
+  border-radius: 8px;
   border: none;
   margin-bottom: 2rem;
+  padding: 10px;
+  padding-right: 7rem;
+  background-color: #f9f0f0;
 }
 .input-field:focus {
   border-bottom: 1px solid #007bff;
