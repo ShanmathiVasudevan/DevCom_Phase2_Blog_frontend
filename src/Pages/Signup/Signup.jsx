@@ -106,7 +106,9 @@ const Signup = () => {
           </div>
 
           <div className="submitbutton">
-            <button className="submitbutton">Sign Up</button>
+            <button onClick={handleSubmit} className="submitbutton">
+              Sign Up
+            </button>
           </div>
         </div>
       </form>
