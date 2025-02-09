@@ -22,7 +22,7 @@ function MyBlogs(){
                 <button className="button1">Blogger</button>
                 <button className="button2">Writer</button>
             </div>
-            <p className="draft-des">Welcome to My Drafts Page!</p>
+            <p className="draft-des">Welcome to My Blogs Page!</p>
             </div>
             </div>
             <div className='middle'>
