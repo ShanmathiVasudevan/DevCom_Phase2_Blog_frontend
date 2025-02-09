@@ -7,7 +7,7 @@ import Home from "./Pages/Home/Home";
 import MyBlogs from './Pages/Home/MyBlogs.jsx'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from "./Pages/Home/Header";
+
 
 function App() {
   const router = createBrowserRouter([

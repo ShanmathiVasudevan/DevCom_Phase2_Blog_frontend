@@ -1,8 +1,14 @@
 body {
   background-color: #c2e2dd;
+  
 }
 .signup {
-  margin-left: 15rem;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
+  height: max-content;
+  box-sizing: border-box;
 }
 .welcome {
   font-family: Arial;

@@ -149,3 +149,14 @@ p.eye {
   margin-left: -2rem;
   transform: translateY(2.8rem);
 }
+.login-home{
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  border-color: transparent;
+  width: 40px;
+}
+.login-home span{
+  font-size: 40px;
+}

@@ -12,6 +12,14 @@ function login() {
     setShow(!show);
   };
   return (
+    <>
+    <Link to={"/home"}>
+      <button className="login-home">
+      <span class="material-symbols-outlined">
+      home
+      </span>
+      </button>
+    </Link>
     <div className="login-page">
       <div className="inner">
         <img src={photo} alt="blog photo" className="image" />
@@ -57,6 +65,8 @@ function login() {
         </p>
       </div>
     </div>
+    </>
+    
   );
 }
 

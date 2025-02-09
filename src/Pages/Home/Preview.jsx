@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 const username="Aakash"
 const blogs=[
     {
@@ -59,6 +59,21 @@ const blogs=[
     }
 
 ]
+/*
+const [blogs,setBlogs]=useState([])
+useEffect(()=>{
+    const fetchBlog=async()=>{
+        try{
+        const response=await Axios.get(url);
+        setBlogs(response.data);
+        }
+        catch(error){
+        console.error("Could not fetch blogs")
+        }
+    }
+    fetchBlog();
+    })
+*/ 
 export const myblogs=blogs.filter(blog=>blog.publisher===username)
 function Preview(){
     const [isPrLiked,setIsPrLiked]=useState(false)
